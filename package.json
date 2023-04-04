@@ -1,0 +1,36 @@
+{
+  "name": "react-crud-ls",
+  "author": {
+    "name": "Nirav Jethva",
+    "email": "nirav7865@gmail.com",
+    "url": "https://about.me/niravjethva"
+  },
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^7.5.0",
+    "bootstrap": "^5.2.0",
+    "classnames": "^2.3.1",
+    "formik": "^2.2.9",
+    "nanoid": "^4.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-js-pagination": "^3.0.3",
+    "react-router-dom": "^6.3.0",
+    "react-toastify": "^9.0.8",
+    "reactstrap": "^9.1.4",
+    "yup": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^3.1.0",
+    "vite": "^4.2.1"
+  }
+}
