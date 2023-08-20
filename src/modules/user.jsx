@@ -21,8 +21,6 @@ export const showDate = (date) =>
 export const getRandomUser = () => {
   const isMale = faker.person.sex() === "male";
 
-  console.log("s", faker.person.sex())
-
   return {
     ...defaultUser,
     id: nanoid(),
