@@ -26,8 +26,8 @@ export const defaultState = {
   currentPage: 1,
   globalSearch: "",
   perPage: "10",
-  sortWith: "createdAt",
   sortType: "DESC",
+  sortWith: "createdAt",
 };
 
 export const headerTitles = {

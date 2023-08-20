@@ -19,23 +19,25 @@ export const showDate = (date) =>
   date ? date.replace(/T.*/, "").split("-").reverse().join("/") : null;
 
 export const getRandomUser = () => {
-  const isMale = faker.name.sex() === "male";
+  const isMale = faker.person.sex() === "male";
+
+  console.log("s", faker.person.sex())
 
   return {
     ...defaultUser,
     id: nanoid(),
     email: faker.internet.email().toLowerCase(),
     address: [
-      faker.address.streetAddress(true),
-      faker.address.city(),
-      faker.address.state(),
+      faker.location.streetAddress(true),
+      faker.location.city(),
+      faker.location.state(),
       " - ",
-      faker.address.zipCode(),
+      faker.location.zipCode(),
     ].join(" "),
     age: faker.random.numeric(2),
-    firstName: faker.name.firstName(isMale),
+    firstName: faker.person.firstName(isMale),
     gender: isMale ? "M" : "F",
-    lastName: faker.name.lastName(isMale),
+    lastName: faker.person.lastName(isMale),
     note: faker.random.words(15),
     status: getRandomFromArray([
       "active",

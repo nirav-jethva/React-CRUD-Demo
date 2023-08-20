@@ -189,7 +189,7 @@ const UsersList = () => {
       </span>
       <PaginationContainer
         activePage={currentPage}
-        itemsCountPerPage={!showAll ? perPage : filterData.length}
+        itemsCountPerPage={Number(!showAll ? perPage : filterData.length)}
         onChange={(offset) => setCurrentPage(offset)}
         totalItemsCount={filterData.length}
       />
