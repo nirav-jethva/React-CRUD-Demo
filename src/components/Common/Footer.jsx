@@ -9,7 +9,7 @@ const Footer = () => (
         Copyright © {year}. All rights reserved.
       </div>
       <div className="d-flex">
-        <div className="me-4">
+        <div>
           By{" "}
           <a
             className="text-white"
@@ -22,14 +22,6 @@ const Footer = () => (
           </a>
           .
         </div>
-        <a
-          className="text-white"
-          href="https://github.com/niravjethva"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <i className="fab fa-github" />
-        </a>
         <UncontrolledTooltip placement="top" target="hire-me">
           Hire Me!
         </UncontrolledTooltip>
